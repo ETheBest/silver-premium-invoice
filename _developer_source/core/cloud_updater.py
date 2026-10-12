@@ -55,9 +55,18 @@ def get_cloud_config() -> Dict[str, Any]:
     """Retrieves cloud update configuration from settings."""
     settings = load_settings()
     cfg = settings.get("cloud_update", {})
+    manifest_url = cfg.get("manifest_url") or DEFAULT_MANIFEST_URL
+    if "erfanofficial" in manifest_url or not manifest_url.startswith("http"):
+        manifest_url = DEFAULT_MANIFEST_URL
+        cfg["manifest_url"] = manifest_url
+        settings["cloud_update"] = cfg
+        try:
+            save_settings(settings)
+        except Exception:
+            pass
     return {
         "enabled": cfg.get("enabled", True),
-        "manifest_url": cfg.get("manifest_url", DEFAULT_MANIFEST_URL),
+        "manifest_url": manifest_url,
         "auto_check_on_startup": cfg.get("auto_check_on_startup", False),
         "last_checked": cfg.get("last_checked", "")
     }
@@ -151,9 +160,12 @@ def find_local_installer() -> Optional[str]:
     candidates = [
         os.path.join(home, "OneDrive", "Desktop", "Silver Premium Invoice Generator Setup.exe"),
         os.path.join(home, "Desktop", "Silver Premium Invoice Generator Setup.exe"),
+        os.path.join(home, "Downloads", "Silver.Premium.Invoice.Generator.Setup.exe"),
+        os.path.join(home, "Downloads", "Silver Premium Invoice Generator Setup.exe"),
         os.path.join(home, "OneDrive", "Desktop", "INVOICE APP", "Silver Premium Invoice Generator Setup.exe"),
         os.path.join(home, "Desktop", "INVOICE APP", "Silver Premium Invoice Generator Setup.exe"),
         os.path.join(get_active_base_dir(), "Silver Premium Invoice Generator Setup.exe"),
+        os.path.join(tempfile.gettempdir(), "Silver.Premium.Invoice.Generator.Setup.exe"),
         os.path.join(tempfile.gettempdir(), "SilverPremiumInstallerOut", "Silver Premium Invoice Generator Setup.exe")
     ]
     for c in candidates:
@@ -184,7 +196,11 @@ def download_cloud_file(
     try:
         req = urllib.request.Request(download_url, headers=headers)
         with urllib.request.urlopen(req, timeout=30) as resp:
-            total_size = int(resp.headers.get("content-length", 0))
+            content_len_hdr = resp.headers.get("content-length")
+            try:
+                total_size = int(content_len_hdr) if content_len_hdr else 0
+            except (ValueError, TypeError):
+                total_size = 0
             downloaded = 0
             chunk_size = 64 * 1024
 

@@ -32,6 +32,6 @@
   },
   "cloud_update": {
     "enabled": true,
-    "manifest_url": "https://raw.githubusercontent.com/erfanofficial/silver-premium-invoice/main/version.json"
+    "manifest_url": "https://raw.githubusercontent.com/ETheBest/silver-premium-invoice/main/version.json"
   }
 }

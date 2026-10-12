@@ -74,6 +74,13 @@ class TestCloudUpdater(unittest.TestCase):
         self.assertIn("current_version", res)
         self.assertIn("message", res)
 
+    def test_online_github_manifest_check(self):
+        # Queries live repository manifest
+        res = check_for_updates()
+        self.assertTrue(res.get("success"))
+        self.assertEqual(res.get("remote_version"), "2.3.0")
+        self.assertIn("ETheBest/silver-premium-invoice", res.get("installer_url", ""))
+
 
 if __name__ == "__main__":
     unittest.main()
