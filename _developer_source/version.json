@@ -1,0 +1,11 @@
+{
+    "version": "2.3.0",
+    "release_date": "2026-10-02",
+    "app_name": "Silver Premium Invoice Generator",
+    "installer_name": "Silver Premium Invoice Generator Setup.exe",
+    "portable_name": "Silver Premium Invoice Generator (Portable).exe",
+    "installer_url": "https://github.com/ETheBest/silver-premium-invoice/releases/download/v2.3.0/Silver.Premium.Invoice.Generator.Setup.exe",
+    "portable_url": "https://github.com/ETheBest/silver-premium-invoice/releases/download/v2.3.0/Silver.Premium.Invoice.Generator.Portable.exe",
+    "changelog": "\u2022 High-DPI table text display fix (rowheight=28) - eliminates sliced text.\n\u2022 Responsive 2-row toolbar in Invoice History for seamless display on laptops.\n\u2022 Scrollable canvas containers in Settings and Updater dialogs.\n\u2022 Taskbar-safe window clamping guaranteeing bottom action buttons are never hidden.\n\u2022 Zero-data-loss multi-vault synchronization across local, Master Vault, and AppData.\n\u2022 Online Cloud Update engine and dedicated Windows GUI updater.",
+    "min_supported_version": "1.0.0"
+}

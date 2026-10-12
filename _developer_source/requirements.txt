@@ -1,0 +1,7 @@
+customtkinter>=5.2.0
+reportlab>=4.0.0
+pymupdf>=1.24.0
+pillow>=10.0.0
+num2words>=0.5.13
+pyinstaller>=6.0.0
+darkdetect>=0.8.0

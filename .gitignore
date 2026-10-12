@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# PyInstaller / Build Artifacts
+build/
+dist/
+*.exe
+*.zip
+*.bin
+
+# Customer Invoices & Output PDFs
+Invoices/
+unit_test_out.pdf
+unit_test_stamp_out.pdf
+unit_test_nostamp_preview.png
+unit_test_stamp_preview.png
+
+# Environment & IDE
+.env
+.venv
+env/
+venv/
+.vscode/
+.idea/
+.perm_test
+
+# Temporary files
+*.tmp
+*.bak
+%temp%/

@@ -1,0 +1,105 @@
+[
+  {
+    "company_name": "Sample Corporate Client LLC",
+    "client_name": "General Services Reference",
+    "address": "Dubai, United Arab Emirates",
+    "trn": "100XXXXXXXXX003",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-11 16:22:44",
+    "id": "cust_default_1",
+    "created_at": "2026-09-11 16:18:12"
+  },
+  {
+    "company_name": "Erfan",
+    "client_name": "document Clearing",
+    "address": "Sharjah, United Arab Emirates",
+    "trn": "1234567893037",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-23 21:54:58",
+    "id": "cust_f86908ad",
+    "created_at": "2026-09-11 16:19:33"
+  },
+  {
+    "id": "cust_418276a6",
+    "company_name": "zeeshan",
+    "client_name": "Zeeashan",
+    "address": "Dubai, United Arab Emirates",
+    "trn": "25252525252303333",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-11 16:29:25",
+    "created_at": "2026-09-11 16:29:25"
+  },
+  {
+    "company_name": "shoaib",
+    "client_name": "glasses",
+    "address": "dubai, uae",
+    "trn": "12345678978979944343",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-11 16:35:04",
+    "id": "cust_a5e8ecb0",
+    "created_at": "2026-09-11 16:32:13"
+  },
+  {
+    "company_name": "Customer Company Name",
+    "client_name": "",
+    "address": "Dubai, United Arab Emiratesd ads",
+    "trn": "das sd",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-23 21:51:58",
+    "id": "cust_d88fd6b7",
+    "created_at": "2026-09-23 21:51:33"
+  },
+  {
+    "id": "cust_4ff811bc",
+    "company_name": "Petro Gulf Refined Oil Products Trading L.L.C",
+    "client_name": "Ms. Rochelle Visa Renewal",
+    "address": "Business Bay, Dubai",
+    "trn": "100459434500003",
+    "phone": "",
+    "email": "",
+    "notes": "Default customer profile",
+    "created_at": "2026-09-11 14:16:07",
+    "updated_at": "2026-09-11 14:16:07"
+  },
+  {
+    "id": "cust_9b027615",
+    "company_name": "Falcon Aviation Services",
+    "client_name": "Capt. Tariq",
+    "address": "Dubai South",
+    "trn": "100555444333003",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "updated_at": "2026-09-11 14:18:17",
+    "created_at": "2026-09-11 14:18:17"
+  },
+  {
+    "id": "cust_f2fe6bf5",
+    "company_name": "Erfan Bahman",
+    "client_name": "Ms. Rochelle Visa Renewal",
+    "address": "",
+    "trn": "",
+    "phone": "",
+    "email": "",
+    "notes": "Imported from past Invoice #102631",
+    "created_at": "2026-09-26 13:06:50",
+    "updated_at": "2026-09-26 13:06:50"
+  },
+  {
+    "id": "cust_mock_1",
+    "company_name": "Legacy Corp",
+    "client_name": "Old Backup Client",
+    "address": "Dubai Silicon Oasis",
+    "trn": "100000000000003"
+  }
+]

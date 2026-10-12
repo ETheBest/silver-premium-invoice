@@ -1,0 +1,31 @@
+{
+  "company": {
+    "name": "SILVER PREMIUM DOCUMENTS CLEARING CO. L.L.C",
+    "trn": "104171277700003",
+    "footer_text": "OFFICE 960, TAMANI ARTS, BAY SQUARE, DUBAI - U.A.E. | Tel: 04 433 8970"
+  },
+  "bank": {
+    "bank_name": "WIO BUSINESS",
+    "account_no": "9895248605",
+    "beneficiary_name": "Silver Premium Documents Clearing Co LLC",
+    "iban": "AE620860000009895248605"
+  },
+  "terms": [
+    "All govt. charges are estimates, may change at any time.",
+    "Timely payment is required for us to proceed with your work."
+  ],
+  "invoice": {
+    "next_number": 102630,
+    "prefix": "",
+    "suffix": ""
+  },
+  "defaults": {
+    "client_name": "Ms. Rochelle Visa Renewal",
+    "customer_company": "Petro Gulf Refined Oil Products Trading L.L.C",
+    "customer_address": "Business Bay, Dubai",
+    "customer_trn": "100459434500003"
+  },
+  "stamp": {
+    "enabled": false
+  }
+}
